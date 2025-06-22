@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+body {
+  @apply m-0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+/* ---- DARK THEME ROOT VARIABLES ---- */
+:root {
+  --background: 0 0% 0% / 80%;          /* Almost opaque black */
+  --foreground: 0 0% 98%;              /* Off-white text */
+  --primary-purple: 263 77% 73%;
+  --mesh-red: 0 100% 50% / 0.3;
+  --mesh-purple: 262 100% 59% / 0.38;
+  --mesh-blue: 198 100% 50% / 0.62;
+  --mesh-orange: 34 100% 65% / 0.37;
+
+  --mesh-gradient: 
+    radial-gradient(at 38% 100%, hsla(var(--mesh-red)) 0px, transparent 40%),
+    radial-gradient(at 97% 50%, hsla(var(--mesh-purple)) 0px, transparent 50%),
+    radial-gradient(at 80% 130%, hsla(var(--mesh-blue)) 0px, transparent 50%),
+    radial-gradient(at 20% 160%, hsla(var(--mesh-orange)) 0px, transparent 50%);
+}
+
+/* ---- MESH GRADIENT BACKGROUND ---- */
+.mesh-gradient-center {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.mesh-gradient-center::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black; /* solid black base */
+  z-index: -2;
+}
+
+.mesh-gradient-center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 100%;
+  z-index: -1;
+  background-image: var(--mesh-gradient);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.my-text {
+  color: hsl(var(--primary-purple));
+}
