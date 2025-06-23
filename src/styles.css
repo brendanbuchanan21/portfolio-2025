@@ -2,14 +2,15 @@
 
 body {
   @apply m-0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -21,7 +22,7 @@ code {
 :root {
   --background: 0 0% 0% / 80%;          /* Almost opaque black */
   --foreground: 0 0% 98%;              /* Off-white text */
-  --primary-purple: 263 77% 73%;
+  --primary-purple: 263 77% 72%;
   --mesh-red: 0 100% 50% / 0.3;
   --mesh-purple: 262 100% 59% / 0.38;
   --mesh-blue: 198 100% 50% / 0.62;
@@ -37,7 +38,7 @@ code {
 /* ---- MESH GRADIENT BACKGROUND ---- */
 .mesh-gradient-center {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -57,10 +58,11 @@ code {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 1000px;
   height: 100%;
   z-index: -1;
+  transform: translateX(-50%);
   background-image: var(--mesh-gradient);
   filter: blur(100px);
   pointer-events: none;
@@ -68,4 +70,12 @@ code {
 
 .my-text {
   color: hsl(var(--primary-purple));
+}
+
+.bg-square-pattern {
+  background-image:
+    linear-gradient(to right, rgba(55, 65, 81, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(55, 65, 81, 0.09) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-repeat: repeat;
 }
