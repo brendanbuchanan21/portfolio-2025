@@ -79,3 +79,16 @@ code {
   background-size: 30px 30px;
   background-repeat: repeat;
 }
+
+
+.card-bg {
+  background-image:
+    radial-gradient(146.13% 118.42% at 50% -15.5%, hsla(0, 0%, 100%, 0.04) 0%, hsla(0, 0%, 100%, 0) 99.59%),
+    linear-gradient(180deg, rgba(46, 51, 90, 0), rgba(28, 27, 51, 0.04));
+}
+
+/* for card shiny stuff */
+.backdrop-blur-3xl {
+  --tw-backdrop-blur: blur(128px);
+  backdrop-filter: var(--tw-backdrop-blur);
+}

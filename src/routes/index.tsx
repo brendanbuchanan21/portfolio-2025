@@ -1,5 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import '../styles.css'
+import { HiOutlineAtSymbol } from "react-icons/hi";
+import { GrProjects } from 'react-icons/gr';
+import SkillsSection from '@/components/skills-section';
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -7,6 +10,7 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
+    <>
    <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern">
       {/* Your hero content here */}
      <div className='flex flex-row gap-8 w-[50rem]'>
@@ -29,8 +33,16 @@ function App() {
 
     {/* links in hero  */}
     <div className='mt-4  w-[50rem] gap-7 flex flex-row items-center'>
-      <button className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm'>Contact Me</button>
-      <button className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm'>Projects</button>
+      <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
+      hover:bg-gray-700 hover:border-none'>
+        <HiOutlineAtSymbol />
+        Contact Me
+        </div>
+      <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
+      hover:bg-gray-700 hover:border-none'>
+        <GrProjects />
+        Projects
+        </div>
 
       {/* Vertical divider */}
     <div className="w-px h-[1.8rem] bg-gray-400 mx-3 flex justify-center items-center" />
@@ -48,5 +60,14 @@ function App() {
 
     
     </div>
+
+    <section className='min-h-[50rem] bg-black border-t border-t-gray-700 flex flex-col items-center'>
+      <SkillsSection />
+    </section>
+
+    <section className='min-h-[40rem] bg-black'>
+
+    </section>
+  </>
   )
 }
