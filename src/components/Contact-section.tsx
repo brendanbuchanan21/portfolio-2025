@@ -4,7 +4,7 @@ export default function ContactSection() {
 
     return (
         <>
-        <div className="mesh-gradient-center z-0 relative overflow-hidden min-h-[30rem] rounded-2xl border border-gray-700 mt-[8rem]">
+        <div className="mesh-gradient-center z-0 relative overflow-hidden min-h-[30rem] rounded-2xl border border-gray-700 mt-[8rem] mb-30">
   {/* Optional wavy background */}
   <div className="wave-grid absolute inset-0"></div>
 
