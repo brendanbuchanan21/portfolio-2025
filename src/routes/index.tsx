@@ -3,6 +3,8 @@ import '../styles.css'
 import { HiOutlineAtSymbol } from "react-icons/hi";
 import { GrProjects } from 'react-icons/gr';
 import SkillsSection from '@/components/skills-section';
+import ContactSection from '@/components/Contact-section';
+import Footer from '@/components/Footer';
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -65,9 +67,13 @@ function App() {
       <SkillsSection />
     </section>
 
-    <section className='min-h-[40rem] bg-black'>
-
+    <section className='min-h-[40rem] bg-black flex flex-col items-center'>
+      <ContactSection />
     </section>
+
+    <footer className='min-h-[8rem] bg-black'>
+      <Footer />
+    </footer>
   </>
   )
 }
