@@ -70,7 +70,7 @@ function App() {
       <SkillsSection />
     </section>
 
-    <section className='min-h-[40rem] bg-black flex flex-col items-center'>
+    <section className='min-h-[40rem] bg-black flex md:px-15'>
       <ContactSection />
     </section>
 

@@ -8,13 +8,13 @@ export default function SkillsSection() {
     return (
         <>
         <div className="w-full max-w-6xl px-5 mx-auto md:px-15">
-        <div className="mt-[7rem] border-orange-500">
+        <div className="mt-[7rem]">
             <h1 className="text-4xl font-bold">Building Digital Experiences</h1>
             <p className="mt-2 text-gray-400">I specialize in creating stunning user interfaces and developing high-quality applications that stand out.</p>
         </div>
         
         {/* card section */}
-        <div className="min-height-[30rem] mt-14 flex flex-col gap-12 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="min-height-[30rem] mt-12 flex flex-col gap-12 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-7">
 
             {/* individual card */}
             <div className="border border-gray-700 rounded-lg p-6 card-bg backdrop-blur-3xl lg:min-w-[15rem]">
