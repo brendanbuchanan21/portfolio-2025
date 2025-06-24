@@ -15,11 +15,12 @@ function App() {
     <>
    <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[100vh]">
       {/* Your hero content here */}
-     <div className='flex flex-row gap-8 w-[50rem]'>
+      <div className='max-w-[50rem] w-full px-4 border border-lime-400 lg:max-auto'>
+     <div className='flex flex-col md:flex-row gap-8 max-w-[50rem] border border-red-600'>
       <img src="/chatGptMe.png" alt="My image" className='w-30 h-30'/>
-      <h1 className="text-white text-6xl font-bold leading-[1.1] font-[inter]">
-      Hey, I'm <span className="mr-2 text-[hsl(var(--primary-purple))] font-[Inter]">Brendan</span>
-      <span className="inline-block mr-2">✨</span>
+      <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] font-[inter]">
+      Hey, I'm <span className="inline-block mr-2 text-[hsl(var(--primary-purple))]">Brendan&nbsp;✨</span>
+
       <br />
       <span className="mr-1 font-[Inter]">A </span>
       <span className='text-[hsl(var(--primary-purple))] font-[Inter]' >Software Engineer</span>
@@ -27,14 +28,15 @@ function App() {
      </div>
 
     {/* the main text of hero */}
-    <div className='w-[50rem] mt-7'>
-      <p className='text-xl'>A <span className='font-bold'>fullstack developer </span>with solid foundations in computer science principles.
+    <div className='max-w-[50rem] mt-7'>
+      <p className='text-md md:text-xl'>A <span className='font-bold'>fullstack developer </span>with solid foundations in computer science principles.
         Looking to the shape the future through cutting edge technology.
       </p>
     </div>
 
     {/* links in hero  */}
-    <div className='mt-4  w-[50rem] gap-7 flex flex-row items-center'>
+    <div className='mt-4  max-w-[50rem] flex flex-col md:flex-row md:justify-center md:items-center gap-4 '>
+      <div className='flex flex-row gap-4 md:gap-7'>
       <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
       hover:bg-gray-700 hover:border-none'>
         <HiOutlineAtSymbol />
@@ -45,9 +47,10 @@ function App() {
         <GrProjects />
         Projects
         </div>
+      </div>
 
       {/* Vertical divider */}
-    <div className="w-px h-[1.8rem] bg-gray-400 mx-3 flex justify-center items-center" />
+    <div className="hidden md:flex w-px h-[1.8rem] bg-gray-400 mx-3  justify-center items-center" />
 
     <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
       <svg
@@ -60,7 +63,7 @@ function App() {
     </a>
     </div>
 
-    
+    </div>
     </div>
 
     <section className='min-h-[50rem] bg-black border-t border-t-gray-700 flex flex-col items-center'>
