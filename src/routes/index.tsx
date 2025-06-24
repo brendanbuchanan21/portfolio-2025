@@ -15,8 +15,8 @@ function App() {
     <>
    <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[100vh]">
       {/* Your hero content here */}
-      <div className='max-w-[50rem] w-full px-4 border border-lime-400 lg:max-auto'>
-     <div className='flex flex-col md:flex-row gap-8 max-w-[50rem] border border-red-600'>
+      <div className='max-w-[50rem] w-full px-4 lg:max-auto'>
+     <div className='flex flex-col md:flex-row gap-8 max-w-[50rem]'>
       <img src="/chatGptMe.png" alt="My image" className='w-30 h-30'/>
       <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] font-[inter]">
       Hey, I'm <span className="inline-block mr-2 text-[hsl(var(--primary-purple))]">Brendan&nbsp;✨</span>
@@ -35,7 +35,7 @@ function App() {
     </div>
 
     {/* links in hero  */}
-    <div className='mt-4  max-w-[50rem] flex flex-col md:flex-row md:justify-center md:items-center gap-4 '>
+    <div className='mt-4  max-w-[50rem] flex flex-col md:flex-row  md:items-center gap-4'>
       <div className='flex flex-row gap-4 md:gap-7'>
       <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
       hover:bg-gray-700 hover:border-none'>
