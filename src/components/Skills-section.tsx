@@ -13,10 +13,10 @@ export default function SkillsSection() {
         </div>
         
         {/* card section */}
-        <div className="w-[50rem]  min-height-[30rem] mt-13 flex flex-col gap-5">
+        <div className="max-w-6xl  min-height-[30rem] mt-13 flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-3">
 
             {/* individual card */}
-            <div className="border border-gray-700 rounded-lg p-6 card-bg backdrop-blur-3xl">
+            <div className="border border-gray-700 rounded-lg p-6 card-bg backdrop-blur-3xl lg:min-w-[15rem]">
                 <div className="flex flex-row items-center gap-5">
                     <FaLaptopCode className="w-10 h-10 color text-[hsl(var(--primary-purple))]"/>
                     <h2 className="text-2xl font-bold">What I can do</h2>

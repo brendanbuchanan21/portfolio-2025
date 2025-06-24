@@ -13,7 +13,7 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <>
-   <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[90vh]">
+   <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[100vh]">
       {/* Your hero content here */}
      <div className='flex flex-row gap-8 w-[50rem]'>
       <img src="/chatGptMe.png" alt="My image" className='w-30 h-30'/>
