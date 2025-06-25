@@ -14,7 +14,7 @@ export default function Footer() {
                 <p className="text-gray-400">Website built with Vite, React, Typescript, Tailwind CSS, Tanstack Router</p>
             </div>
         </div>
-        <div className=" pb-4 px-5 sm:px-20 xl:px-52 flex flex-row justify-between">
+        <div className=" pb-4 px-5 sm:px-20 xl:px-52 flex flex-row justify-between bg-black">
             <p>© 2025 Brendan. All rights are reserved.</p>
         </div>
         </>

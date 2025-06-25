@@ -1,4 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { IoMdHappy } from 'react-icons/io'
+import { LuMessageCircleDashed } from 'react-icons/lu'
+import Footer from '@/components/Footer'
 
 export const Route = createFileRoute('/projects/')({
   component: RouteComponent,
@@ -6,8 +9,8 @@ export const Route = createFileRoute('/projects/')({
 
 function RouteComponent() {
   return (
-  
-      <section className="flex flex-col py-25 px-5 sm:px-20 xl:px-52 bg-black min-h-[1000px]">
+      <>
+      <section className="flex flex-col py-25 px-5 sm:px-20 xl:px-52 bg-black min-h-[800px]">
         <div>
           <h1 className='text-4xl font-bold mb-2'>Projects</h1>
           <p className='text-gray-400'>Here you will find a selection of projects I have worked on.</p>
@@ -104,10 +107,24 @@ function RouteComponent() {
                 </div>
               </div>
             </a>
+
+            <div className='rounded-lg min-h-[250px] flex flex-col items-center justify-center gap-4 mt-5'>
+            <IoMdHappy className='h-18 w-18 text-[hsl(var(--primary-purple))]'/>
+            <h1 className='font-bold text-xl'>Let's Work Together!</h1>
+            <p className='text-gray-500'>Have a project in mind? Let's talk about it.</p>
+            <a aria-label="Contact Me" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 gap-2" href="mailto:brendanbuchanan21@gmail.com">
+            <LuMessageCircleDashed />
+            Contact Me
+            </a>
+
+            </div>
+
+            {/* end of cards content */}
           </div>
         </div>
 
-
       </section>
+      <Footer/>
+      </>
   )
 }
