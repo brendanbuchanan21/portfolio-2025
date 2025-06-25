@@ -37,13 +37,13 @@ export default function Header() {
         <div className="flex justify-between items-center w-full max-w-screen-xl px-6 lg:px-20 py-2 mx-auto">
           {/* Left side: Logo + Nav */}
           <div className="flex items-center gap-20">
-            <p className="text-2xl font-semibold text-[hsl(var(--primary-purple))] cursor-pointer">
+            <Link to='/' className="text-2xl font-semibold text-[hsl(var(--primary-purple))] cursor-pointer">
               Brendan.dev
-            </p>
+            </Link>
             <nav className="hidden md:flex gap-6 font-bold text-sm">
               <Link to="/" className="px-2 py-1 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-300">Home</Link>
               <Link to="/projects" className="px-2 py-1 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-300">Projects</Link>
-              <p className="px-2 py-1 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-300">Contact</p>
+              <a href="mailto:brendanbuchanan21@gmail.com" className="px-2 py-1 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-300">Contact</a>
             </nav>
           </div>
 
@@ -59,9 +59,9 @@ export default function Header() {
               <IoMdClose className='w-8 h-8 cursor-pointer hover:grey' onClick={() => setDrawerOpen(false)}/>
             </div>
             
-            <Link to="/" className=''>Home</Link>
-            <Link to="/projects" className=''>Projects</Link>
-            <p>Contact</p>
+            <Link to="/" onClick={() => setDrawerOpen(false)} className=''>Home</Link>
+            <Link to="/projects" onClick={() => setDrawerOpen(false)} className=''>Projects</Link>
+            <a href='mailto:brendanbuchanan21@gmail.com'>Contact</a>
           </div>
         )}
       </header>

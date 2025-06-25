@@ -16,9 +16,9 @@ function RouteComponent() {
           <p className='text-gray-400'>Here you will find a selection of projects I have worked on.</p>
         </div>
 
-        <div className='pt-8 grid grid-cols-2 gap-x-3 items-start'>
+        <div className='pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-3 items-start'>
           <div className='grid grid-cols-1 gap-12px gap-y-4'>
-            <a href="">
+            <a href="https://pt-website-smoky.vercel.app/" className='' target='_blank'>
               <div className="relative rounded-lg overflow-hidden group border-gray-300">
                 <div className='relative'>
                   <img src="/pt-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
@@ -48,7 +48,7 @@ function RouteComponent() {
                 </div>
               </div>
             </a>
-            <a href="">
+            <a href="https://expense-tracker-app-swart-six.vercel.app/" target='_blank' className='pt-8 sm:pt-0'>
               <div className="relative rounded-lg overflow-hidden group border border-gray-300">
                 <div className='relative'>
                   <img src="/expense-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
@@ -71,7 +71,6 @@ function RouteComponent() {
                       </div>
                     </div>
 
-
                   </div>
                 </div>
               </div>
@@ -79,7 +78,7 @@ function RouteComponent() {
           </div>
 
           <div className='grid grid-cols-1 gap-12px'>
-            <a href="">
+            <a href="https://www.makingprogress.app/" target='_blank' className='pt-8 sm:pt-0'>
               <div className="relative rounded-lg overflow-hidden group border-gray-300">
                 <div className='relative'>
                   <img src="/making-progress-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>

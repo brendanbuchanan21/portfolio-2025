@@ -5,6 +5,7 @@ import { GrProjects } from 'react-icons/gr';
 import SkillsSection from '@/components/skills-section';
 import ContactSection from '@/components/Contact-section';
 import Footer from '@/components/Footer';
+import { Link } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -37,22 +38,22 @@ function App() {
     {/* links in hero  */}
     <div className='mt-4  max-w-[50rem] flex flex-col md:flex-row  md:items-center gap-4'>
       <div className='flex flex-row gap-4 md:gap-7'>
-      <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
+      <a href='mailto:brendanbuchanan21@gmail.com' className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
       hover:bg-gray-700 hover:border-none'>
         <HiOutlineAtSymbol />
         Contact Me
-        </div>
-      <div className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
+        </a>
+      <Link to="/projects" className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
       hover:bg-gray-700 hover:border-none'>
         <GrProjects />
         Projects
-        </div>
+      </Link>
       </div>
 
       {/* Vertical divider */}
     <div className="hidden md:flex w-px h-[1.8rem] bg-gray-400 mx-3  justify-center items-center" />
 
-    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/brendanbuchanan21" target="_blank" rel="noopener noreferrer">
       <svg
         className="w-5 h-5 fill-white hover:fill-gray-400 transition"
         xmlns="http://www.w3.org/2000/svg"

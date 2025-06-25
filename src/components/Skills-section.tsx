@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa"
 import { LiaToolsSolid } from "react-icons/lia"
 import { FaHandshake } from "react-icons/fa"
 import { GrProjects } from "react-icons/gr"
+import { Link } from "@tanstack/react-router"
 
 export default function SkillsSection() {
     return (
@@ -68,11 +69,11 @@ export default function SkillsSection() {
         </div>
 
         <div className="w-full flex justify-end">
-            <div className='w-[13rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
+            <Link to="/projects" className='w-[13rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
                   hover:bg-gray-700 hover:border-none mt-5 p-5'>
                     <GrProjects />
                     View My Projects
-            </div>
+            </Link>
         </div>
         </div>
         </>
