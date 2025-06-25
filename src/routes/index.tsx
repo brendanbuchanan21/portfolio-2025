@@ -14,7 +14,7 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <>
-   <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[100vh]">
+   <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern h-[100svh]">
       {/* Your hero content here */}
       <div className='max-w-[50rem] w-full px-4 lg:max-auto'>
      <div className='flex flex-col md:flex-row gap-8 max-w-[50rem]'>
