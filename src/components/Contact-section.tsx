@@ -11,18 +11,18 @@ export default function ContactSection() {
   <div className="relative z-10 flex flex-col gap-10 xl:flex-row xl:gap-16">
     {/* Contact heading */}
     <div className="flex-1">
-    <h1 className='text-3xl text-[hsl(var(--primary-purple))] font-bold lg:text-5xl'>
+    <h1 className='text-3xl text-[hsl(var(--primary-purple))] font-bold lg:text-4xl'>
       Bringing your ideas to life.
       <br />
       Let's turn your vision into reality
     </h1>
-    <p className="mt-3 text-gray-400 lg:text-xl">
+    <p className="mt-3 lg:text-lg">
       Have a project in mind or just want to chat? Let's connect!
     </p>
   </div>
 
     {/* Contact form */}
-    <div className="relative z-100 border border-gray-800 min-w-[30rem] mt-12 p-6 rounded-lg backdrop-blur-xl bg-gradient-gray">
+    <div className="relative z-100 border border-gray-800 lg:min-w-[30rem] p-6 rounded-lg backdrop-blur-xl bg-gradient-gray">
 
       <form action="">
         <div className="flex flex-col gap-2">
