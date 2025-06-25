@@ -2,10 +2,10 @@ import { createFileRoute } from '@tanstack/react-router'
 import '../styles.css'
 import { HiOutlineAtSymbol } from "react-icons/hi";
 import { GrProjects } from 'react-icons/gr';
-import SkillsSection from '../components/skills-section'
 import ContactSection from '@/components/Contact-section';
 import Footer from '@/components/Footer';
 import { Link } from '@tanstack/react-router';
+import SkillsSection from '@/components/skills';
 
 export const Route = createFileRoute('/')({
   component: App,
