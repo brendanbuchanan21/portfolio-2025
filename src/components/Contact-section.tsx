@@ -1,6 +1,30 @@
-
+import { useState } from "react"
 
 export default function ContactSection() {
+
+   const [formSubmitted, setFormSubmitted] = useState(false)
+   const [formError, setFormError] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const form = e.currentTarget as HTMLFormElement
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value.trim()
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
+    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim()
+
+    if (!name || !email || !message) {
+      e.preventDefault();
+      setFormError(true);
+      return;
+    }
+
+    setFormError(false);
+    setFormSubmitted(true);
+
+    setTimeout(() => {
+      form.reset()
+    }, 300)
+
+  }
 
     return (
         <>
@@ -24,7 +48,7 @@ export default function ContactSection() {
     {/* Contact form */}
     <div className="relative z-100 border border-gray-800 lg:min-w-[30rem] p-6 rounded-lg backdrop-blur-xl bg-gradient-gray">
 
-      <form action="">
+      <form action="https://send.pageclip.co/TwyEZfLzTTZHJLrtyNDMqbHOm7CekVCN" method="post" onSubmit={handleSubmit} className="pageclip-form">
         <div className="flex flex-col gap-2">
                 <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="name">Name</label>
                 <input className="flex h-10 w-full rounded-md border border-gray-800 bg-black px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Your Name" required type="text" name="name" />
@@ -33,7 +57,14 @@ export default function ContactSection() {
                 <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="message">Message</label>
                 <textarea className="flex min-h-[80px] w-full rounded-md border border-gray-800 bg-black px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 h-32" name="message" placeholder="Your message here..." required></textarea>
                 <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-800 bg-black hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 ml-auto mt-2" type="submit">Send</button>
-                </div>
+                {formSubmitted && (
+                  <p className="text-green-500 text-sm mt-2">Message sent successfully! 🎉</p>
+                )}
+                {formError && (
+                  <p className="text-red-500 text-sm mt-2">Please fill out all fields.</p>
+                )}
+      
+      </div>
           
       </form>
     </div>

@@ -38,7 +38,7 @@ export default function Header() {
           {/* Left side: Logo + Nav */}
           <div className="flex items-center gap-20">
             <Link to='/' className="text-2xl font-semibold text-[hsl(var(--primary-purple))] cursor-pointer">
-              Brendan.dev
+              brendanbuchanan.dev
             </Link>
             <nav className="hidden md:flex gap-6 font-bold text-sm">
               <Link to="/" className="px-2 py-1 rounded-md hover:bg-gray-700 hover:text-white transition-colors duration-300">Home</Link>
