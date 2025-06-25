@@ -28,7 +28,7 @@ function App() {
     </h1>
      </div>
 
-    {/* the main text of hero */}
+    {/* the main text of hero ya know*/}
     <div className='max-w-[50rem] mt-7'>
       <p className='text-md md:text-xl'>A <span className='font-bold'>fullstack developer </span>with solid foundations in computer science principles.
         Looking to the shape the future through cutting edge technology.
