@@ -37,7 +37,7 @@ code {
 
 
 
-
+/*
 
 .mesh-gradient-center {
   position: relative;
@@ -46,7 +46,7 @@ code {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  /* why can't we do 100% ? */
+
 }
 
 
@@ -84,8 +84,32 @@ code {
   filter: blur(100px);
   pointer-events: none;
 }
+*/
 
 
+.mesh-gradient-center {
+  position: relative;
+}
+.mesh-gradient-center::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black; 
+  z-index: -2;
+}
+
+.mesh-gradient-center:after {
+      content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 700px;
+    height: 90%;
+    z-index: -1;
+    background-image: var(--mesh-gradient);
+    filter: blur(100px);
+
+}
 
 .my-text {
   color: hsl(var(--primary-purple));

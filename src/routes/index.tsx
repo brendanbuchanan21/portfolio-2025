@@ -14,29 +14,31 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <>
-   <div className="mesh-gradient-center flex flex-col items-start justify-start mx-auto overflow-hidden bg-square-pattern p-6 min-h-[calc(100vh-80px)]">
+    <main className='bg-square-pattern'>
+      <div className="flex justify-center items-center p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
       {/* Your hero content here */}
-      <div className='max-w-[50rem] w-full px-4 lg:max-auto'>
-     <div className='flex flex-col md:flex-row gap-8 max-w-[50rem]'>
+      <div className='grid grid-cols-1'>
+     <div className='flex flex-col md:flex-row md:items-center gap-10 pb-8'>
       <img src="/chatGptMe.png" alt="My image" className='w-30 h-30'/>
-      <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] font-[inter]">
-      Hey, I'm <span className="inline-block mr-2 text-[hsl(var(--primary-purple))]">Brendan&nbsp;✨</span>
-
+      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+      Hey, I'm <span className="text-[hsl(var(--primary-purple))]">Brendan</span>
+      <span className='inline-block'>✨</span>
       <br />
-      <span className="mr-1 font-[Inter]">A </span>
-      <span className='text-[hsl(var(--primary-purple))] font-[Inter]' >Software Engineer</span>
+      A
+      <span className='text-[hsl(var(--primary-purple))]'>Software Engineer</span>
     </h1>
      </div>
 
     {/* the main text of hero ya know*/}
-    <div className='max-w-[50rem] mt-7'>
-      <p className='text-md md:text-xl'>A <span className='font-bold'>fullstack developer </span>with solid foundations in computer science principles.
-        Looking to the shape the future through cutting edge technology.
+    
+      <p className='text-xl max-w-[750px] bg-foreground gradient-text-white'>A <span className='font-bold'>fullstack developer</span>with solid foundations in computer science principles.
+      <br />
+        Looking to shape the future through cutting edge technology.
       </p>
-    </div>
+      
 
     {/* links in hero  */}
-    <div className='mt-4  max-w-[50rem] flex flex-col md:flex-row  md:items-center gap-4'>
+    <div className='mt-8  max-w-[50rem] flex flex-col md:flex-row  md:items-center gap-4'>
       <div className='flex flex-row gap-4 md:gap-7'>
       <a href='mailto:brendanbuchanan21@gmail.com' className='w-[9rem] h-[2.5rem] border border-gray-700 bg-black rounded-sm flex flex-row items-center justify-center gap-2 cursor-pointer
       hover:bg-gray-700 hover:border-none'>
@@ -66,6 +68,7 @@ function App() {
 
     </div>
     </div>
+    </main>
 
     <section className='min-h-[50rem] bg-black border-t border-t-gray-700 flex flex-col items-center'>
       <SkillsSection />
