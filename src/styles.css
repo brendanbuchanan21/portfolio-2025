@@ -46,6 +46,7 @@ code {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  /* why can't we do 100% ? */
 }
 
 
