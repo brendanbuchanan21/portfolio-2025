@@ -25,13 +25,13 @@ function App() {
       <span className='inline-block'>✨</span>
       <br />
       A
-      <span className='text-[hsl(var(--primary-purple))]'>Software Engineer</span>
+      <span className='text-[hsl(var(--primary-purple))]'> Software Engineer</span>
     </h1>
      </div>
 
     {/* the main text of hero ya know*/}
     
-      <p className='text-xl max-w-[750px] bg-foreground gradient-text-white'>A <span className='font-bold'>fullstack developer</span>with solid foundations in computer science principles.
+      <p className='text-xl max-w-[750px] bg-foreground gradient-text-white'>A <span className='font-bold'>fullstack developer </span>with solid foundations in computer science principles.
       <br />
         Looking to shape the future through cutting edge technology.
       </p>
