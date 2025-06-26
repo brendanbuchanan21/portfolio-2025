@@ -53,7 +53,7 @@ function RouteComponent() {
                 <div className='relative'>
                   <img src="/expense-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                   {/* hover text on img card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 ease-in-out">
                     <div className='p-4'>
                       <h1 className='text-white text-xl font-bold'>Expense Tracker</h1>
                       <p className='text-white'>A finance tracker to visualize your spending</p>
@@ -83,7 +83,7 @@ function RouteComponent() {
                 <div className='relative'>
                   <img src="/mp-landing-pg-img.jpg" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                   {/* hover text on img card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 ease-in-out">
                     <div className='p-4'>
                       <h1 className='text-white text-xl font-bold'>MakingProgress</h1>
                       <p className='text-white'>A workout app to track your progress overtime</p>
