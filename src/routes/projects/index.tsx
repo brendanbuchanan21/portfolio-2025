@@ -23,9 +23,7 @@ function RouteComponent() {
                 <div className='relative'>
                   <img src="/pt-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                   {/* hover text on img card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end
-             opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100
-             transition-opacity duration-300 ease-in-out">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                     <div className='p-4'>
                       <h1 className='text-white text-xl font-bold'>OrthoNeuro</h1>
                       <p className='text-white'>A Physical Therpay Business Plan</p>
