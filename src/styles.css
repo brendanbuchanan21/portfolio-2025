@@ -89,7 +89,11 @@ code {
 
 .mesh-gradient-center {
   position: relative;
+  overflow: hidden;
+
 }
+
+
 .mesh-gradient-center::before {
   content: "";
   position: absolute;
@@ -98,8 +102,9 @@ code {
   z-index: -2;
 }
 
+
 .mesh-gradient-center:after {
-      content: "";
+    content: "";
     position: absolute;
     top: 0;
     left: auto;
