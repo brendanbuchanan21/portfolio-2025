@@ -29,7 +29,7 @@ export default function ContactSection() {
     return (
         <>
         <div className="w-full max-w-6xl px-5 mx-auto md:px-15">
-        <div className="mesh-gradient-center z-0 relative min-h-[30rem] rounded-2xl border border-gray-700 mt-[8rem] mb-30">
+        <div className="mesh-gradient-center z-0 relative overflow-visible min-h-[30rem] rounded-2xl border border-gray-700 mt-[8rem] mb-30">
   <div className="wave-grid absolute inset-0"></div>
 
   <div className="relative z-10 flex flex-col gap-10 xl:flex-row xl:gap-16">

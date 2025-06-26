@@ -35,7 +35,10 @@ code {
     radial-gradient(at 20% 160%, hsla(var(--mesh-orange)) 0px, transparent 50%);
 }
 
-/* ---- MESH GRADIENT BACKGROUND ---- */
+
+
+
+
 .mesh-gradient-center {
   position: relative;
   overflow: hidden;
@@ -45,13 +48,27 @@ code {
   padding: 2rem;
 }
 
+
 .mesh-gradient-center::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: black; /* solid black base */
+  background: black; 
   z-index: -2;
 }
+
+.mesh-gradient-center:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 700px;
+    height: 90%;
+    z-index: -1;
+    background-image: var(--mesh-gradient);
+    filter: blur(100px);
+}
+
 
 .mesh-gradient-center::after {
   content: "";
@@ -66,6 +83,8 @@ code {
   filter: blur(100px);
   pointer-events: none;
 }
+
+
 
 .my-text {
   color: hsl(var(--primary-purple));
