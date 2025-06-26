@@ -38,7 +38,6 @@ code {
 /* ---- MESH GRADIENT BACKGROUND ---- */
 .mesh-gradient-center {
   position: relative;
-  min-height: 80vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
