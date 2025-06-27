@@ -49,9 +49,9 @@ function RouteComponent() {
               </div>
             </a>
             <a href="https://expense-tracker-app-swart-six.vercel.app/" target='_blank' className='pt-8 sm:pt-0'>
-              <div className="relative rounded-lg overflow-hidden group border border-gray-300">
+              <div className="relative rounded-lg overflow-hidden group">
                 <div className='relative'>
-                  <img src="/expense-img.png" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+                  <img src="/expense-landing-img.jpg" alt="" className="w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
                   {/* hover text on img card */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 ease-in-out">
                     <div className='p-4'>
